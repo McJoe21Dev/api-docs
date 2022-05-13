@@ -4,7 +4,7 @@ description: An API for packages I host on my website
 
 # Packages API
 
-#### How to get a package
+#### How to get a package <a href="#get" id="get"></a>
 
 You can get any package if you know its id and just send request this to endpoint and it will give you the basics of what you need.
 
@@ -35,7 +35,7 @@ ID of the package
 {% endswagger-response %}
 {% endswagger %}
 
-Example of what the endpoint will return for the "mqo-game" package if it works
+Example of what the get endpoint will return for the <mark style="color:blue;background-color:orange;">mqo-game</mark> package if it works.
 
 ```json
 {
@@ -62,6 +62,12 @@ Example of what the endpoint will return for the "mqo-game" package if it works
   }
 ```
 
+
+
+#### Query package list <a href="#query" id="query"></a>
+
+Don't know the ID of the package you want to download? Then this will make it easy to find it out by the keyword in the ID.
+
 {% swagger method="get" path="" baseUrl="https://api.mcjoe21.com/packages/query" summary="Query packages by keyword" %}
 {% swagger-description %}
 
@@ -83,3 +89,14 @@ List of tags to filter results
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+Example of what the query endpoint will return for the <mark style="color:blue;background-color:orange;">game</mark> query if it works.
+
+```json
+{
+  "data": [
+    "mqo-game",
+    "mqo-game-beta"
+  ]
+}
+```
