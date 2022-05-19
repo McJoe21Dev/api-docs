@@ -18,7 +18,7 @@ ID of the package
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="format" type="String" %}
-Data format of response can be set as <mark style="color:white;background-color:blue;">xml</mark> or <mark style="color:white;background-color:lightblue;">json</mark>
+Data format of response can be set as <mark style="color:white;background-color:blue;">xml</mark> or <mark style="color:white;background-color:yellow;">json</mark>
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description=" Returns package data object" %}
@@ -73,7 +73,7 @@ List of tags to filter results
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="format" type="String" %}
-Data format of response can be set as <mark style="color:white;background-color:blue;">xml</mark> or <mark style="color:white;background-color:lightblue;">json</mark>
+Data format of response can be set as <mark style="color:white;background-color:blue;">xml</mark> or <mark style="color:white;background-color:yellow;">json</mark>
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Returns packages list object" %}
