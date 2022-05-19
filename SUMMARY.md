@@ -4,6 +4,6 @@
 
 ## APIs
 
-* [📦 Packages API](apis-1/packages.md)
-* [😀 Jokes API](apis-1/jokes.md)
-* [🔗 Short Links API](apis-1/short-links.md)
+* [📦 Packages API](apis/packages-api.md)
+* [😀 Jokes API](apis/jokes-api.md)
+* [🔗 Short Links API](apis/short-links-api.md)
