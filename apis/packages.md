@@ -2,9 +2,9 @@
 description: An API for packages I host on my website
 ---
 
-# Packages API
+# 📦 Packages API
 
-#### How to get a package <a href="#get" id="get"></a>
+### How to get a package <a href="#get" id="get"></a>
 
 You can get any package if you know its id and just send request this to endpoint and it will give you the basics of what you need.
 
@@ -17,10 +17,8 @@ Get data of a package.
 ID of the package
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description=" Returns data" %}
+{% swagger-response status="200" description=" Returns package data object" %}
 {% endswagger-response %}
-
-{% swagger-response status="401" description="Permission denied" %}
 
 {% endswagger-response %}
 {% endswagger %}
@@ -58,9 +56,8 @@ Example of what the get endpoint will return for the <mark style="color:blue;bac
 
 Don't know the ID of the package you want to download? Then this will make it easy to find it out by the keyword in the ID.
 
-{% swagger method="get" path="" baseUrl="https://api.mcjoe21.com/packages/query" summary="Query packages by keyword" %}
+{% swagger method="get" path="" baseUrl="https://api.mcjoe21.com/" path="packages/get" summary="Query packages by keyword" %}
 {% swagger-description %}
-
 {% endswagger-description %}
 
 {% swagger-parameter in="query" name="q" required="true" type="String" %}
@@ -71,7 +68,7 @@ The query string to search
 List of tags to filter results
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="" %}
+{% swagger-response status="200: OK" description="Returns packages list object" %}
 {% endswagger-response %}
 {% endswagger %}
 
