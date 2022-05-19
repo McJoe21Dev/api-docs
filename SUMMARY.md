@@ -1,11 +1,9 @@
 # Table of contents
 
-* [Welcome!](README.md)
-* [Quick Start](quick-start.md)
+* [API Reference](README.md)
 
 ## APIs
 
-* [API Reference](apis/README.md)
-* [📦 Packages API](apis/packages.md)
-* [😀 Jokes API](apis/jokes.md)
-* [🔗 Short Links API](apis/short-links.md)
+* [📦 Packages API](apis-1/packages.md)
+* [😀 Jokes API](apis-1/jokes.md)
+* [🔗 Short Links API](apis-1/short-links.md)

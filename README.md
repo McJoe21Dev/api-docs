@@ -1,21 +1,23 @@
-# Welcome!
+---
+layout: landing
+---
 
-## Welcome to MyAPI
+# API Reference
 
-Welcome to MyAPI! Here you'll find all the documentation you need to get up and running with the MyAPI API.
+Dive into the specifics of each API endpoint by checking out our complete documentation.
 
-## Want to jump right in?
+### Packages API
 
-Feeling like an eager beaver? Jump in to the quick start docs and get making your first request:
+We have an easy way to get the data of any of our public packages that are hosted on the website.
 
-{% content-ref url="quick-start.md" %}
-[quick-start.md](quick-start.md)
+{% content-ref url="apis-1/packages.md" %}
+[packages.md](apis-1/packages.md)
 {% endcontent-ref %}
 
-## Want to deep dive?
+### Jokes API
 
-Dive a little deeper and start exploring our API reference to get an idea of everything that's possible with the API:
+It says whats it is!
 
-{% content-ref url="reference/api-reference/" %}
-[api-reference](reference/api-reference/)
+{% content-ref url="apis-1/jokes.md" %}
+[jokes.md](apis-1/jokes.md)
 {% endcontent-ref %}

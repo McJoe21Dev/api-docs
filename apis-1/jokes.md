@@ -2,7 +2,7 @@
 description: Just a simple jokes API for your entertainment
 ---
 
-# 😃 Jokes API
+# 😀 Jokes API
 
 Here a simple little joke endpoint that I have created for your fun and entertainment
 
@@ -11,11 +11,26 @@ Here a simple little joke endpoint that I have created for your fun and entertai
 
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="format" type="String" %}
-Data format of response can be set as <mark style="color:white;background-color:blue;">xml</mark> or <mark style="color:white;background-color:yellow;">json</mark>
+{% swagger-parameter in="query" name="format" type="String" required="false" %}
+Data format of response can be set as 
+
+<mark style="background-color:blue;">
+
+xml
+
+</mark>
+
+ or 
+
+<mark style="background-color:yellow;">
+
+json
+
+</mark>
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Returns joke object" %}
+
 {% endswagger-response %}
 {% endswagger %}
 
@@ -24,11 +39,26 @@ Data format of response can be set as <mark style="color:white;background-color:
 
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="format" type="String" %}
-Data format of response can be set as <mark style="color:white;background-color:blue;">xml</mark> or <mark style="color:white;background-color:yellow;">json</mark>
+{% swagger-parameter in="query" name="format" type="String" required="false" %}
+Data format of response can be set as 
+
+<mark style="background-color:blue;">
+
+xml
+
+</mark>
+
+ or 
+
+<mark style="background-color:yellow;">
+
+json
+
+</mark>
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Returns joke object" %}
+
 {% endswagger-response %}
 {% endswagger %}
 
