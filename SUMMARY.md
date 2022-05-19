@@ -3,9 +3,9 @@
 * [Welcome!](README.md)
 * [Quick Start](quick-start.md)
 
-## Reference
+## APIs
 
-* [API Reference](reference/api-reference/README.md)
-  * [Short Links API](apis/short-links.md)
-  * [📦 Packages API](apis/packages.md)
-  * [😀 Jokes API](apis/jokes.md)
+* [API Reference](apis/README.md)
+* [Short Links API](apis/short-links.md)
+* [📦 Packages API](apis/packages.md)
+* [😀 Jokes API](apis/jokes.md)
