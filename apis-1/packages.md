@@ -40,7 +40,7 @@ json
 {% endswagger-response %}
 {% endswagger %}
 
-Example of what the get endpoint will return for the <mark style="color:blue;background-color:orange;">mqo-game</mark> package if it works.
+Example of what the get endpoint will return for the "**mqo-game"** package.
 
 ```json
 {
@@ -107,7 +107,7 @@ json
 {% endswagger-response %}
 {% endswagger %}
 
-Example of what the query endpoint will return for the <mark style="color:blue;background-color:orange;">game</mark> query if it works.
+Example of what the query endpoint will return for the "**game"** query.
 
 ```json
 {
