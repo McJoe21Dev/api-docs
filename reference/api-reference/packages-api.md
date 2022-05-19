@@ -18,16 +18,6 @@ ID of the package
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description=" Returns data" %}
-```javascript
-{
-    "name"="Wilson",
-    "owner": {
-        "id": "sha7891bikojbkreuy",
-        "name": "Samuel Passet",
-    "species": "Dog",}
-    "breed": "Golden Retriever",
-}
-```
 {% endswagger-response %}
 
 {% swagger-response status="401" description="Permission denied" %}
@@ -82,11 +72,6 @@ List of tags to filter results
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    // Response
-}
-```
 {% endswagger-response %}
 {% endswagger %}
 
