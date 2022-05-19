@@ -1,12 +1,12 @@
 ---
-description: An API for packages I host on my website
+description: An API for download packages I host on my website
 ---
 
 # 📦 Packages API
 
 ### How to get a package <a href="#get" id="get"></a>
 
-You can get any package if you know its id and just send request this to endpoint and it will give you the basics of what you need.
+You can get any package if you know its id and just send request this to endpoint and it will give you the data of what you need to do the things you want with the API.
 
 {% swagger baseUrl="https://api.mcjoe21.com/" method="get" path="packages/get" summary="Gets information about a package hosted on the website." %}
 {% swagger-description %}
@@ -17,12 +17,25 @@ Get data of a package.
 ID of the package
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="format" type="String" %}
-Data format of response can be set as <mark style="color:white;background-color:blue;">xml</mark> or <mark style="color:white;background-color:yellow;">json</mark>
+{% swagger-parameter in="query" name="format" type="String" required="false" %}
+Data format of response can be set as 
+
+<mark style="background-color:blue;">
+
+xml
+
+</mark>
+
+ or 
+
+<mark style="background-color:yellow;">
+
+json
+
+</mark>
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description=" Returns package data object" %}
-{% endswagger-response %}
 
 {% endswagger-response %}
 {% endswagger %}
@@ -54,29 +67,43 @@ Example of what the get endpoint will return for the <mark style="color:blue;bac
   }
 ```
 
-
-
-#### Query package list <a href="#query" id="query"></a>
+### How to query package list <a href="#query" id="query"></a>
 
 Don't know the ID of the package you want to download? Then this will make it easy to find it out by the keyword in the ID.
 
-{% swagger method="get" path="" baseUrl="https://api.mcjoe21.com/" path="packages/get" summary="Query packages by keyword" %}
+{% swagger method="get" path="packages/get" baseUrl="https://api.mcjoe21.com/" summary="Query packages by keyword" %}
 {% swagger-description %}
+
 {% endswagger-description %}
 
 {% swagger-parameter in="query" name="q" required="true" type="String" %}
 The query string to search
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="tag" type="Strings List" %}
+{% swagger-parameter in="query" name="tag" type="Strings List" required="false" %}
 List of tags to filter results
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="format" type="String" %}
-Data format of response can be set as <mark style="color:white;background-color:blue;">xml</mark> or <mark style="color:white;background-color:yellow;">json</mark>
+{% swagger-parameter in="query" name="format" type="String" required="false" %}
+Data format of response can be set as 
+
+<mark style="background-color:blue;">
+
+xml
+
+</mark>
+
+ or 
+
+<mark style="background-color:yellow;">
+
+json
+
+</mark>
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Returns packages list object" %}
+
 {% endswagger-response %}
 {% endswagger %}
 

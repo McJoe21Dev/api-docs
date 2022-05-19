@@ -6,6 +6,6 @@
 ## APIs
 
 * [API Reference](apis/README.md)
-* [Short Links API](apis/short-links.md)
 * [📦 Packages API](apis/packages.md)
 * [😀 Jokes API](apis/jokes.md)
+* [🔗 Short Links API](apis/short-links.md)
