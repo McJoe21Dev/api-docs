@@ -1,5 +1,5 @@
 ---
-description: An API for download packages I host on my website
+description: An API for download packages hosted on our service
 ---
 
 # 📦 Packages API
