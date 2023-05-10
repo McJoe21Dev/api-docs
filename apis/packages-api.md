@@ -8,7 +8,7 @@ description: An API for download packages I host on my website
 
 You can get any package if you know its id and just send request this to endpoint and it will give you the data of what you need to do the things you want with the API.
 
-{% swagger baseUrl="https://api.mcjoe21.com/" method="get" path="packages/get" summary="Gets information about a package hosted on the website." %}
+{% swagger baseUrl="https://api.mcjoe21.com/" method="get" path="packages/get" summary="Gets information about a package." %}
 {% swagger-description %}
 Get data of a package.
 {% endswagger-description %}
@@ -18,21 +18,13 @@ ID of the package
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="format" type="String" required="false" %}
-Data format of response can be set as 
+Data format of response can be set as
 
-<mark style="background-color:blue;">
+<mark style="background-color:blue;">xml</mark>
 
-xml
+or
 
-</mark>
-
- or 
-
-<mark style="background-color:yellow;">
-
-json
-
-</mark>
+<mark style="background-color:yellow;">json</mark>
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description=" Returns package data object" %}
@@ -85,21 +77,13 @@ List of tags to filter results
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="format" type="String" required="false" %}
-Data format of response can be set as 
+Data format of response can be set as
 
-<mark style="background-color:blue;">
+<mark style="background-color:blue;">xml</mark>
 
-xml
+or
 
-</mark>
-
- or 
-
-<mark style="background-color:yellow;">
-
-json
-
-</mark>
+<mark style="background-color:yellow;">json</mark>
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Returns packages list object" %}

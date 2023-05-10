@@ -10,27 +10,19 @@ Here a simple little joke endpoint that I have created for your fun and entertai
 
 This will return a random joke from the collection.
 
-{% swagger method="get" path="jokes/random" baseUrl="https://api.mcjoe21.com/" summary="Returns a random joke." %}
+{% swagger method="get" path="joke/random" baseUrl="https://api.mcjoe21.com/" summary="Returns a random joke." %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
 {% swagger-parameter in="query" name="format" type="String" required="false" %}
-Data format of response can be set as 
+Data format of response can be set as
 
-<mark style="background-color:blue;">
+<mark style="background-color:blue;">xml</mark>
 
-xml
+or
 
-</mark>
-
- or 
-
-<mark style="background-color:yellow;">
-
-json
-
-</mark>
+<mark style="background-color:yellow;">json</mark>
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Returns joke object" %}
@@ -42,27 +34,19 @@ json
 
 This will return the joke of the day.
 
-{% swagger method="get" path="jokes/daily" baseUrl="https://api.mcjoe21.com/" summary="Returns the daily joke." %}
+{% swagger method="get" path="joke/daily" baseUrl="https://api.mcjoe21.com/" summary="Returns the daily joke." %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
 {% swagger-parameter in="query" name="format" type="String" required="false" %}
-Data format of response can be set as 
+Data format of response can be set as
 
-<mark style="background-color:blue;">
+<mark style="background-color:blue;">xml</mark>
 
-xml
+or
 
-</mark>
-
- or 
-
-<mark style="background-color:yellow;">
-
-json
-
-</mark>
+<mark style="background-color:yellow;">json</mark>
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Returns joke object" %}
