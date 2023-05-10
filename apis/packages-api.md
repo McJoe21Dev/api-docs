@@ -6,7 +6,7 @@ description: An API for download packages I host on my website
 
 ### How to get a package <a href="#get" id="get"></a>
 
-You can get any package if you know its id and just send request this to endpoint and it will give you the data of what you need to do the things you want with the API.
+You can get any package if you know its id and just send request to this endpoint and it will give you the data of what you need.
 
 {% swagger baseUrl="https://api.mcjoe21.com/" method="get" path="packages/get" summary="Gets information about a package." %}
 {% swagger-description %}
