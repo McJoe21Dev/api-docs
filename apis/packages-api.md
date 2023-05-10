@@ -1,5 +1,5 @@
 ---
-description: An API for download packages hosted on our service
+description: An API for get information packages hosted on our service
 ---
 
 # 📦 Packages API
