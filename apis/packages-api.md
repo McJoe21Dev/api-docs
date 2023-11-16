@@ -76,16 +76,6 @@ The query string to search
 List of tags to filter results
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="format" type="String" required="false" %}
-Data format of response can be set as
-
-<mark style="background-color:blue;">xml</mark>
-
-or
-
-<mark style="background-color:yellow;">json</mark>
-{% endswagger-parameter %}
-
 {% swagger-response status="200: OK" description="Returns packages list object" %}
 
 {% endswagger-response %}
